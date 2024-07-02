@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-principal: #14181C;
+    --cor-titulo: #FF8000;
+    --cor-subtitulo: #00E054;
+    --cor-destaque: #40BCF4;
+    --cor-texto: #ffffff;
+    --cor-rodape: #2C3440;
+    --borda-tabela: 1px solid #40BCF4;
+    --fonte-logo: "Dancing Script";
+    --fonte-titulo: "Bebas Neue", sans-serif;
+    --fonte-texto: "Roboto Condensed", sans-serif ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    font-family: var(--fonte-logo);
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
+    text-align: center;
+    padding: 1.5rem;
+}
+.logo__letterboxd{
+    padding: 0 1rem 0 0;
+    vertical-align: -13%;
+}
+main{
+    font-family: var(--fonte-texto);
+    width: 100%;
+    background-color: var(--cor-principal);
+    background-image: url("../assets/content-bg.png");
+    background-repeat: repeat-x;
+    color: var(--cor-texto);
+}
+.materia{
+    padding-top: 5.5rem;
+    text-align: center;
+}
+.materia__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 36px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 6rem 10rem 6rem;
+    margin: 0 6rem 0 6rem;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+    background-color: var(--cor-rodape);
+}
+th, td{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+th{
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 20px;
+    border: var(--borda-tabela);
+    color: var(--cor-destaque);
+}
+td{
+    border: var(--borda-tabela);
+}
+ul{
+    list-style-type: none;
+}
+.filme__titulo{
+    color: var(--cor-titulo);
+    font-size: 20px;
+    text-align: center;
+}
+.filme__nota{
+    color: var(--cor-subtitulo);
+    font-size: 20px;
+    text-align: center;
+}
+.filme__sinopse__diretor{
+    color: var(--cor-destaque);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: var(--fonte-texto);
+    font-size: 11px;
+    color: var(--cor-texto);
+    align-items: center;
+    background-color: var(--cor-rodape);
+}
+.meu__letterboxd{
+    display: flex;
+    align-items: center;  
+    color: var(--cor-subtitulo);
+    font-family: var(--fonte-titulo);
+    font-size: 26px;
+}
+.meu__letterboxd__foto{
+    border-radius: 50%;
+    margin: 0 0 0 1rem;
+}
